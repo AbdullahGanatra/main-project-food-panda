@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Panda Ads Navbar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- cdn link icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 6%;
+            /* Side padding adjust ki hai */
+            background-color: #ffffff;
+            height: 80px;
+        }
+
+        .logo {
+            font-family: 'Roboto', sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: #ff2b85;
+            letter-spacing: -1px;
+            cursor: pointer;
+        }
+
+        .logo span {
+            font-weight: 300;
+            /* 'ads' ko thoda patla kiya hai */
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-items ul {
+            font-family: poppins;
+            margin-right: 80px;
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-items a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 700;
+            /* Bold links as per image */
+            font-size: 14px;
+            padding: 25px 15px;
+            position: relative;
+            transition: 0.3s;
+        }
+
+        .nav-items a:hover::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background-color: #ff2b85;
+            border-radius: 0 0 5px 5px;
+            display: block;
+        }
+
+        .contact-btn {
+            background: #ff2b85;
+            color: #fff;
+            border: none;
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            padding: 12px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s;
+            white-space: nowrap;
+        }
+
+        .contact-btn:hover {
+            background: #e62076;
+        }
+
+        .search-area {
+            margin-left: 20px;
+        }
+
+        .search-icon {
+            font-size: 20px;
+            color: #333;
+            cursor: pointer;
+        }
+
+        /* nav complate */
+
+        /* hero starte */
+       .hero {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Image path check karlein */
+    background-image: url("assets/image/Home/slide.png"); 
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-div {
+    padding-left: 100px;
+    max-width: 600px;
+}
+
+.hero-h1 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-p {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* Button Styling */
+.hero-btn {
+    border: solid transparent;
+    display: inline-block;
+    background-color: white;
+    color: #D70F64; 
+    padding: 12px 35px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.hero-btn a{
+    text-decoration: none ;
+    color: #D70F64;
+}
+
+.hero-btn:hover {
+    background-color: #f2f2f2;
+    transform: scale(1.05);
+}
+        /* hero complate */
+
+
+        /* counter starte */
+.stats-container {
+    margin-top: 60px;
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.main-heading {
+    text-align: center;
+    font-family: poppins;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 50px;
+    color: #000000;
+    line-height: 1.2;
+}
+
+.stats-grid {
+    font-family: roboto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stat-item {
+    flex: 1;
+}
+
+.number {
+    font-size: 70px;
+    font-weight: 900;
+    color: #000000;
+    margin-bottom: 5px;
+    letter-spacing: -2px;
+}
+
+.label {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: lowercase;
+}
+        /* counter complate */
+
+
+        /* Power up your visibility & engagement */
+.features-section {
+    padding: 50px;
+    background-color: rgb(241, 241, 241);
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.main-title {
+    font-family: poppins;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    color: #000;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.feature-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-icon {
+    width: 80px; /* Icon ka size */
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.feature-card h3 {
+    font-family: poppins;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.feature-card p {
+    font-family: roboto;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #333;
+    max-width: 280px; /* Text ki width control karne ke liye */
+}
+        /* Power up your visibility & engagement complate */
+
+        /* 3 section ek sath */
+
+.solutions-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.main-heading {
+    font-family: poppins;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 80px;
+}
+
+.solution-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    gap: 50px;
+}
+
+/* Isse image aur text ki jagah badal jati hai */
+.solution-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.solution-image {
+    flex: 1;
+    text-align: center;
+}
+
+.solution-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.solution-content {
+    flex: 1;
+}
+
+.solution-content h2 {
+    font-family: poppins;
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.solution-content p {
+    font-family: roboto;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+/* Pink Button Style */
+.btn-pink {
+    display: inline-block;
+    background-color: #ff2b85; /* foodpanda pink color */
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.btn-pink:hover {
+    background-color: #e02475;
+}
+        /* 3 section complate */
+    </style>
+</head>
+
+<body>
+
+    <!-- nav nbar starte -->
+    <nav class="navbar">
+        <div class="logo">
+            panda <span>ads</span>
+        </div>
+
+        <div class="nav-container">
+            <div class="nav-items">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Solutions</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Tools</a></li>
+                </ul>
+            </div>
+
+            <div class="button-group">
+                <button class="contact-btn">Contact us</button>
+            </div>
+
+            <div class="search-area">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- nav bar complate -->
+
+
+    <!-- hero starte -->
+    <header class="hero">
+        <div class="hero-div">
+            <h1 class="hero-h1">Reach millions <br> With panda ads</h1>
+
+            <p class="hero-p">Advertise with foodpanda and connect with millions of
+                <br>ready-to-shop customers within and beyond the foodpanda app.
+            </p>
+            <button class="hero-btn"><a href="#">Get in touch</a></button>
+        </div>
+    </header>
+
+    <!-- hero complate -->
+
+
+    <!-- counter starte -->
+<div class="stats-container">
+    <h1 class="main-heading">Boost your brand with Asia’s largest <br> food and grocery delivery network*</h1>
+    
+    <div class="stats-grid">
+        <div class="stat-item">
+            <div class="number">125M</div>
+            <div class="label">app downloads</div>
+        </div>
+        
+        <div class="stat-item">
+            <div class="number">11</div>
+            <div class="label">markets</div>
+        </div>
+        
+        <div class="stat-item">
+            <div class="number">400+</div>
+            <div class="label">cities</div>
+        </div>
+    </div>
+</div>
+    <!-- counter complate -->
+
+
+    <!-- Power up your visibility & engagement starte -->
+<center><section class="features-section">
+    <h1 class="main-title">Power up your visibility & engagement</h1>
+    
+    <div class="features-grid">
+        <div class="feature-card">
+            <img src="assets/image/Home/power up 1 img.png" alt="Reach" class="feature-icon">
+            <h3>Maximise your reach</h3>
+            <p>Amplify your campaign by connecting with your target customers right where they shop</p>
+        </div>
+
+        <div class="feature-card">
+            <img src="assets/image/Home/power 2 img.png" alt="Engage" class="feature-icon">
+            <h3>Engage high-value audiences</h3>
+            <p>Leverage our first-party data and advanced targeting to connect with the right audience</p>
+        </div>
+
+        <div class="feature-card">
+            <img src="assets/image/Home/power 3 img.png" alt="Support" class="feature-icon">
+            <h3>Get personalised support</h3>
+            <p>Achieve your marketing goals and drive growth with personalised support, insights, and more</p>
+        </div>
+    </div>
+</section></center>
+
+
+    <!-- Power up your visibility & engagement complate -->
+
+
+<!-- 3 section ek sath -->
+
+<section class="solutions-container">
+    <h1 class="main-heading">Customised retail media advertising solutions for your brand's needs</h1>
+
+    <div class="solution-row">
+        <div class="solution-image">
+            <img src="assets/image/Home/home mobile.png" alt="In-app advertising">
+        </div>
+        <div class="solution-content">
+            <h2>In-app advertising</h2>
+            <p>Increase brand visibility with native display ads across different categories on the foodpanda app</p>
+            <a href="#" class="btn-pink">Explore solutions</a>
+        </div>
+    </div>
+
+    <div class="solution-row reverse">
+        <div class="solution-image">
+            <img src="assets/image/Home/home bag.png" alt="Off-app advertising">
+        </div>
+        <div class="solution-content">
+            <h2>Off-app advertising</h2>
+            <p>Amplify your campaigns with foodpanda, from email marketing and social media to rider bag ads and product sampling</p>
+            <a href="#" class="btn-pink">Explore solutions</a>
+        </div>
+    </div>
+
+    <div class="solution-row">
+        <div class="solution-image">
+            <img src="assets/image/Home/home other.png" alt="Strategic partnerships">
+        </div>
+        <div class="solution-content">
+            <h2>Strategic partnerships</h2>
+            <p>Execute integrated campaigns for maximum impact, with tailored solutions like vouchers, data partnerships and consumer insights</p>
+            <a href="#" class="btn-pink">Explore solutions</a>
+        </div>
+    </div>
+</section>
+<!-- 3 section ek sath  complate -->
+
+</body>
+
+</html>
