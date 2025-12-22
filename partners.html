@@ -133,7 +133,7 @@
         color: #000000;
     }
 
-    h1 {
+    .r {
         font-family: poppins;
         font-size: 42px;
         font-weight: 800;
@@ -143,6 +143,7 @@
     }
 
     p {
+        text-align: center;
         font-family: roboto;
         font-size: 18px;
         line-height: 1.6;
@@ -417,7 +418,7 @@ h1 {
 }
 
 h1 {
-    text-align: left;
+    text-align:left;
     font-size: 48px; /* Bada aur bold heading */
     font-weight: 800;
     color: #000;
@@ -435,7 +436,7 @@ p {
 
 /* Button Styling */
 .cta-button {
-    display: inline-block;
+    text-align: left;
     background-color: #ff2b85; 
     color: white;
     text-decoration: none;
@@ -465,55 +466,144 @@ p {
 
 /* why partner food panda starte  */
 
-.main-container {
-    text-align: center;
-    padding: 50px;
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 40px;
 }
 
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 40px;
-    font-weight: bold;
-    color: #333;
+.w {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
 }
 
-.card-wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .card {
-    position: relative;
-    width: 22%;
-    overflow: hidden;
-    border-radius: 10px;
+  width: 23%;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .card img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
-.card:hover img {
-    transform: scale(1.05);
+.text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
 }
 
-.overlay {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    font-size: 1.5em;
-    font-weight: bold;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 10px;
-    border-radius: 5px;
-    max-width: 80%;
+.text h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 /* why partner food panda complete */
+
+/* How does it work? */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.e {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.step {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 250px;
+  flex: 1;
+}
+
+.step img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.step p {
+    font-weight: 800;
+    text-align: center;
+  font-size: 20px;
+  color: #333;
+  line-height: 1.2;
+}
+/* How does it work? complate */
+
+/* Have more questions? Check it out here starte */
+.faq-section {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.faq-section h2 {
+    font-family: poppins;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #000;
+}
+
+.faq-item {
+    font-family: poppins;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 22px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+}
+
+.faq-item span {
+    width: 100%;
+    text-align: center;
+}
+
+.faq-item i {
+    position: absolute;
+    right: 0;
+    font-size: 16px;
+}
+
+
+.faq-item:last-child {
+    border-bottom: 1px solid #000;
+}
+/* Have more questions? Check it out here complate */
+
 
     /* FOOTER */
 
@@ -604,7 +694,7 @@ h1 {
                 <li><a href="partners.html">Partners</a></li>
                 <li><a href="pandaads.html">panda ads</a></li>
                 <li><a href="contect.html">Contact</a></li>
-                <li><a href="#">Careers</a></li>
+                <li><a href="carrers.html">Careers</a></li>
             </ul>
 
             <a href="#" class="location-btn">Choose location</a>
@@ -630,7 +720,7 @@ h1 {
 
     <!-- Become a restaurant or local shop partner -->
  <center><div class="container">
-        <h1>Become a restaurant or local shop partner</h1>
+        <h1 class="r">Become a restaurant or local shop partner</h1>
         <p class="description">
             Take your business to new heights by partnering with foodpanda, the leading delivery service trusted by businesses large and small. We dare to always go further, helping you reach untapped customer bases, boost order volume, and drive more sales.
         </p>
@@ -662,7 +752,7 @@ h1 {
         <div class="would-you-content-box">
             <h1>Would you like to boost customer reach and revenue?</h1>
             <p>Don't miss out on earnings. Join foodpanda to reach more customers and increase revenue.</p>
-            <a href="#" class="cta-button">Start now!</a>
+            <a href="#" class="cta-button" >Start now!</a>
         </div>
         
         <div class="image-box">
@@ -672,50 +762,104 @@ h1 {
 
 <!-- would you like to boost custumer reach andrevenue complate -->
 
-<!-- why partner With food panda starte -->
-  <!-- <div class="main-container">
-        <h1>Why partner with foodpanda?</h1>
 
-        <div class="card-wrapper">
-            <div class="card">
-                <img src="assets/images/le.jfif" alt="Reach new customers">
-                <div class="overlay">REACH NEW CUSTOMERS</div>
-            </div>
-            <div class="card">
-                <img src="assets/images/len.jfif" alt="Boost your volume">
-                <div class="overlay">BOOST YOUR VOLUME</div>
-            </div>
-            <div class="card">
-                <img src="assets/images/lena.jfif" alt="Drive more sales">
-                <div class="overlay">DRIVE MORE SALES</div>
-            </div>
-            <div class="card">
-                <img src="assets/images/l.jfif" alt="Increase satisfaction" height="2">
-                <div class="overlay">INCREASE CUSTOMER SATISFACTION</div>
-            </div>
+<!-- why partner With food panda starte -->
+  
+  <div class="container">
+    <h1 class="w">Why partner with foodpanda?</h1>
+    <div class="cards">
+      <div class="card">
+        <img src="assets/images/le.jfif" alt="Reach new customers">
+        <div class="text">
+          <h3>REACH NEW CUSTOMERS</h3>
         </div>
-    </div> -->
+      </div>
+      <div class="card">
+        <img src="assets/images/len.jfif" alt="Boost your volume">
+        <div class="text">
+          <h3>BOOST YOUR VOLUME</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/images/lena.jfif" alt="Drive more sales">
+        <div class="text">
+          <h3>DRIVE MORE SALES</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/images/l.jfif" alt="Increase customer satisfaction">
+        <div class="text">
+          <h3>INCREASE CUSTOMER SATISFACTION</h3>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <!-- why partner food panda complete -->
 
 <!-- How does it work? -->
 
-  
-<!--How does it work? complate -->
 
+      <div class="container">
+    <h1 class="e">How does it work?</h1>
+    <div class="steps">
+      <div class="step">
+        <img src="assets/images/c.webp" alt="Step 1">
+        <p><strong>1.</strong> <br>The customer adds their delivery address in the app or on the website and then selects a store or restaurant in their area.</p>
+      </div>
+      <div class="step">
+        <img src="assets/images/d.webp" alt="Step 2">
+        <p><strong>2.</strong><br>You accept the order with the reading tablet and prepare it for the collection time.</p>
+      </div>
+      <div class="step">
+        <img src="assets/images/e.webp" alt="Step 3">
+        <p><strong>3.</strong><br> A rider will come to you at the specified time and collect the order. It is then delivered directly to the customer!</p>
+      </div>
+      <div class="step">
+        <img src="assets/images/f.webp" alt="Step 4">
+        <p><strong>4.</strong><br> Twice per month you receive payments for the orders you have received via foodora. You automatically receive a basis for the deposit and a detailed insight into your sales statistics.</p>
+      </div>
+    </div>
+  </div>
+<!--How does it work? complate -->
+<!-- Have more questions? Check it out here starte -->
+
+
+<section class="faq-section">
+    <h2>Have more questions? Check it out here</h2>
+
+    <div class="faq-item">
+        <span>How can I receive orders?</span>
+        <i class="fas fa-chevron-right"></i>
+    </div>
+
+    <div class="faq-item">
+        <span> Are there any costs if I register on the site?</span>
+        <i class="fas fa-chevron-right"></i>
+    </div>
+
+    <div class="faq-item">
+        <span>What are the opening hours like?</span>
+        <i class="fas fa-chevron-right"></i>
+    </div>
+</section>
+<!-- Have more questions? Check it out here complate -->
 
 
     <!-- footer starte -->
     <footer class="footer">
         <div class="footer-container">
 
-            <!-- Logo -->
+            
+
+            <!-- Navigate -->
+             
+                <!-- Logo -->
             <div class="footer-logo">
                 <img src="assets/images/logo_food-panda-removebg-preview.png" alt="foodpanda">
             </div>
-
-            <!-- Navigate -->
             <div class="footer-col">
+            
                 <h4>Navigate</h4>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -758,3 +902,5 @@ h1 {
 </body>
 
 </html>
+
+
