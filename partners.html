@@ -20,7 +20,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <title>About Us</title>
 </head>
 <style>
@@ -341,58 +340,180 @@
     /* Become a restaurant or local shop partner */
 
     .container {
-    width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 50px 20px;
-}
-
-.header {
-    background-color: #ccc;
     text-align: center;
-    margin-bottom: 50px;
+    padding: 20px;
 }
 
-.header h1 {
+h1 {
     font-size: 32px;
-    font-weight: bold;
+    font-weight: 800;
     margin-bottom: 20px;
+    color: #000;
 }
 
-.header p {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.countries {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.country {
-    text-decoration: none;
-    padding: 10px 20px;
+.description {
     font-size: 16px;
     color: #333;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    border: 2px solid #ddd;
-    transition: background-color 0.3s, color 0.3s;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    padding: 0 50px;
 }
 
-.country:hover {
-    background-color: #f7a8b8;
-    color: #fff;
+/* Button Layout */
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
 }
 
-.country.active {
-    background-color: #f7a8b8;
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Button Styling */
+.btn {
+    text-decoration: none;
+    color: #d70f64; /* Foodpanda Pink */
+    border: 2px solid #d70f64;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 16px;
+    min-width: 140px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e60073; 
+    color: white;   
+}
+
+/* Active Button (Bangladesh style) */
+.btn.active {
+    background-color: #000;
     color: #fff;
-    border: 2px solid #f7a8b8;
+    border-color: #000;
 }
     /* Become a restaurant or local shop partner complate */
+
+
+    /*  would you like to boost custumer reach andrevenue starte */
+.would-you-section {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    gap: 40px; 
+}
+
+.would-you-content-box {
+    flex: 1; 
+    padding: 20px;
+}
+
+h1 {
+    text-align: left;
+    font-size: 48px; /* Bada aur bold heading */
+    font-weight: 800;
+    color: #000;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+p {
+    text-align: left;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 35px;
+    line-height: 1.5;
+}
+
+/* Button Styling */
+.cta-button {
+    display: inline-block;
+    background-color: #ff2b85; 
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e02475;
+}
+
+.image-box {
+    flex: 1; 
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px; 
+    display: block;
+}
+    /*  would you like to boost custumer reach andrevenue complate */
+
+
+/* why partner food panda starte  */
+
+.main-container {
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    position: relative;
+    width: 22%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 80%;
+}
+/* why partner food panda complete */
 
     /* FOOTER */
 
@@ -508,28 +629,82 @@
 
 
     <!-- Become a restaurant or local shop partner -->
- <div class="container">
-        <div class="header">
-            <h1>Become a restaurant or local shop partner</h1>
-            <p>Take your business to new heights by partnering with foodpanda, the leading delivery service trusted by businesses large and small.</p>
-            <p>We dare to always go further, helping you reach untapped customer bases, boost order volume, and drive more sales.</p>
-        </div>
+ <center><div class="container">
+        <h1>Become a restaurant or local shop partner</h1>
+        <p class="description">
+            Take your business to new heights by partnering with foodpanda, the leading delivery service trusted by businesses large and small. We dare to always go further, helping you reach untapped customer bases, boost order volume, and drive more sales.
+        </p>
 
-        <div class="countries">
-            <a href="#" class="country">Malaysia</a>
-            <a href="#" class="country">Philippines</a>
-            <a href="#" class="country">Bangladesh</a>
-            <a href="#" class="country">Hong Kong</a>
-            <a href="#" class="country">Pakistan</a>
-            <a href="#" class="country">Singapore</a>
-            <a href="#" class="country">Taiwan</a>
-            <a href="#" class="country active">Cambodia</a>
-            <a href="#" class="country">Laos</a>
-            <a href="#" class="country">Myanmar</a>
+        <div class="button-group">
+            <div class="row">
+                <a href="#" class="btn">Malaysia</a>
+                <a href="#" class="btn">Philippines</a>
+                <a href="#" class="btn active">Bangladesh</a>
+                <a href="#" class="btn">Hong Kong</a>
+            </div>
+            <div class="row">
+                <a href="#" class="btn">Pakistan</a>
+                <a href="#" class="btn">Singapore</a>
+                <a href="#" class="btn">Taiwan</a>
+                <a href="#" class="btn">Cambodia</a>
+            </div>
+            <div class="row">
+                <a href="#" class="btn">Laos</a>
+                <a href="#" class="btn">Myanmar</a>
+            </div>
+        </div>
+    </div></center>
+    <!-- Become a restaurant or local shop partner complate -->
+
+
+<!-- would you like to boost custumer reach andrevenue starte -->
+<center><section class="would-you-section">
+        <div class="would-you-content-box">
+            <h1>Would you like to boost customer reach and revenue?</h1>
+            <p>Don't miss out on earnings. Join foodpanda to reach more customers and increase revenue.</p>
+            <a href="#" class="cta-button">Start now!</a>
+        </div>
+        
+        <div class="image-box">
+            <img src="assets/images/fr.PNG" alt="Market Scene">
+        </div>
+    </section></center>
+
+<!-- would you like to boost custumer reach andrevenue complate -->
+
+<!-- why partner With food panda starte -->
+  <div class="main-container">
+        <h1>Why partner with foodpanda?</h1>
+
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="assets/images/le.jfif" alt="Reach new customers">
+                <div class="overlay">REACH NEW CUSTOMERS</div>
+            </div>
+            <div class="card">
+                <img src="assets/images/len.jfif" alt="Boost your volume">
+                <div class="overlay">BOOST YOUR VOLUME</div>
+            </div>
+            <div class="card">
+                <img src="assets/images/lena.jfif" alt="Drive more sales">
+                <div class="overlay">DRIVE MORE SALES</div>
+            </div>
+            <div class="card">
+                <img src="assets/images/l.jfif" alt="Increase satisfaction" height="2">
+                <div class="overlay">INCREASE CUSTOMER SATISFACTION</div>
+            </div>
         </div>
     </div>
 
-    <!-- Become a restaurant or local shop partner complate -->
+<!-- why partner food panda complete -->
+
+<!-- How does it work? -->
+
+  
+<!--How does it work? complate -->
+
+
+
     <!-- footer starte -->
     <footer class="footer">
         <div class="footer-container">
