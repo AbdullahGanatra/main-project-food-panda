@@ -569,7 +569,192 @@
 
  /* What our customers are saying complate  */
 
-    </style>
+ /* Start advertising with panda ads today! */
+
+.ads-today{
+    background:#fff3f6;
+    padding:50px 60px;
+}
+
+.ads-box{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+/* TEXT */
+.ads-box h2{
+    font-family: poppins;
+    font-size:38px;
+    font-weight:800;
+    color:#000;
+}
+
+/* BUTTON */
+.ads-btn{
+    background:#ff2f7d;
+    color:#fff;
+    padding:16px 36px;
+    border-radius:40px;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:600;
+    transition:0.3s ease;
+}
+
+.ads-btn:hover{
+    background:#e6286e;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+    .ads-box{
+        flex-direction:column;
+        text-align:center;
+        gap:25px;
+    }
+
+    .ads-box h2{
+        font-size:28px;
+    }
+}
+
+ 
+/* Start advertising with panda ads today! complate */
+
+/* Brands excelling with us */
+
+.brands {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.brands h2 {
+    font-family: poppins;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 40px;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.brands-grid img {
+  max-width: 120px;
+  margin: auto;
+  filter: grayscale(100%);
+  opacity: 0.75;
+  transition: 0.3s ease;
+}
+
+.brands-grid img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
+/* Brands excelling with us complate */
+
+/* footer */
+
+
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 60px 40px 30px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.5fr 1fr 1fr;
+  gap: 40px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.footer-logo {
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo img {
+    padding-bottom: 50px;
+  width: 150px;
+}
+
+.footer-logo span {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.footer-col h4 {
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.footer-col a {
+  display: block;
+  color: #ddd;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.footer-col a:hover {
+  color: #ff2b85;
+}
+
+.contact-btn {
+  background: #ff2b85;
+  border: none;
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.contact-btn:hover {
+  background: #e02673;
+}
+
+.linkedin {
+  font-size: 26px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  margin-top: 60px;
+  font-size: 13px;
+  color: #bbb;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+/* footer complate */
+</style>
 </head>
 
 <body>
@@ -583,15 +768,15 @@
         <div class="nav-container">
             <div class="nav-items">
                 <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">Solutions</a></li>
-                    <li><a href="#">Resources</a></li>
+                    <li><a href="pandaads.html" class="active">Home</a></li>
+                    <li><a href="Solutions.html">Solutions</a></li>
+                    <li><a href="">Resources</a></li>
                     <li><a href="#">Tools</a></li>
                 </ul>
             </div>
 
             <div class="button-group">
-                <button class="contact-btn">Contact us</button>
+                <a href="contect.html"><button class="contact-btn">Contact us</button></a>
             </div>
 
             <div class="search-area">
@@ -835,9 +1020,91 @@
 <!-- Start advertising with panda ads today! -->
 
 
+<section class="ads-today">
+    <div class="ads-box">
+        <h2>Start advertising with panda ads today!</h2>
+        <a href="#" class="ads-btn">Get in touch!</a>
+    </div>
+</section>
 
 <!-- Start advertising with panda ads today! complate -->
 
+
+<!-- Brands excelling with us -->
+
+<section class="brands">
+  <h2>Brands excelling with us</h2>
+
+  <div class="brands-grid">
+    <img src="assets/image/Home/1.png" alt="Amazon">
+    <img src="assets/image/Home/2.png" alt="Heineken">
+    <img src="assets/image/Home/3.png" alt="Netflix">
+    <img src="assets/image/Home/4.png" alt="Samsung">
+    <img src="assets/image/Home/5.png" alt="Citi">
+    <img src="assets/image/Home/6.png" alt="Huawei">
+    <img src="assets/image/Home/7.png" alt="Mastercard">
+    <img src="assets/image/Home/8.png" alt="Unilever">
+    <img src="assets/image/Home/9.png" alt="Coca Cola">
+    <img src="assets/image/Home/10.png" alt="P&G">
+    <img src="assets/image/Home/11.png" alt="Standard Chartered">
+    <img src="assets/image/Home/12.png" alt="Visa">
+    <img src="assets/image/Home/13.png" alt="Mars">
+    <img src="assets/image/Home/14.png" alt="GCash">
+    <img src="assets/image/Home/15.png" alt="Zalora">
+    <img src="assets/image/Home/16.png" alt="Disney+">
+  </div>
+</section>
+
+<!-- Brands excelling with us complate -->
+
+<!-- footer -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Logo -->
+    <div class="footer-logo">
+      <img src="assets/image/Home/logo-white.svg" alt="foodpanda" width="">
+     <!-- Our company -->
+    <div class="footer-col">
+      <h4>Our company</h4>
+      <a href="#">About foodpanda</a>
+      <a href="#">Privacy policy</a>
+    </div>
+    </div>
+
+   
+
+    <!-- Panda ads -->
+    <div class="footer-col">
+      <h4>panda ads</h4>
+      <a href="#">Retail media solutions</a>
+      <a href="#">Media kit generator</a>
+      <a href="#">Case studies</a>
+      <a href="#">Industry insights</a>
+      <a href="#">Newsroom</a>
+      <a href="#">Pau-Pau marketer personality quiz</a>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col">
+      <h4>Get in touch!</h4>
+      <button class="contact-btn">Contact us</button>
+    </div>
+
+    <!-- Social -->
+    <div class="footer-col">
+      <h4>Follow us on</h4>
+      <a href="#" class="linkedin">in</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    Copyright © 2026 foodpanda
+  </div>
+</footer>
+
+<!-- footer compalte -->
 </body>
 
 </html>
